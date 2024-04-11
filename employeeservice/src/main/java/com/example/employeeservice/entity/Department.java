@@ -9,21 +9,21 @@ import jakarta.persistence.Id;
 public class Department {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private Integer id;
+    private Long id;
     private String name;
-    public Department(Integer id, String name) {
+    public Department(Long id, String name) {
         this.id = id;
         this.name = name;
     }
     public Department() {
     }
-    public void setId(Integer id) {
+    public void setId(Long id) {
         this.id = id;
     }
     public void setName(String name) {
         this.name = name;
     }
-    public Integer getId() {
+    public Long getId() {
         return id;
     }
     public String getName() {

@@ -11,7 +11,7 @@ import jakarta.persistence.ManyToOne;
 public class Employee {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private Integer id;
+    private Long id;
     private String firstName;
     private String lastName;
     private String email;
@@ -23,7 +23,7 @@ public class Employee {
     public Employee() {
     }
 
-    public Employee(Integer id, String firstName, String lastName, String email, String phone, Department department) {
+    public Employee(long id, String firstName, String lastName, String email, String phone, Department department) {
         this.id = id;
         this.firstName = firstName;
         this.lastName = lastName;
@@ -32,7 +32,7 @@ public class Employee {
         this.department = department;
     }
 
-    public void setId(Integer id) {
+    public void setId(Long id) {
         this.id = id;
     }
 
@@ -56,7 +56,7 @@ public class Employee {
         this.department = department;
     }
 
-    public Integer getId() {
+    public Long getId() {
         return id;
     }
 

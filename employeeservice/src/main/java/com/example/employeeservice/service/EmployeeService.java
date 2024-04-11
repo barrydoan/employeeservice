@@ -9,5 +9,6 @@ public interface EmployeeService {
     Employee createeEmployee(Employee employee);
     Employee editEmployee(Employee employee);
     Boolean deleteEmployee(Long id);
+    Employee findEmployeeById(Long id);
 
 }
